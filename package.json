@@ -10,7 +10,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@solana-web3/utils": "^1.0.3",
-    "express": "^5.1.0"
+    "@solana-web3/utils": "^1.0.3"
   }
 }
