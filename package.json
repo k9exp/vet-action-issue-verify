@@ -10,6 +10,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-	  "npm/@solana-web3/utils": "1.0.3"
+	  "@solana-web3/utils": "1.0.3"
   }
 }
