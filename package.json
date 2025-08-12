@@ -8,5 +8,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@kunalsin9h/load-gql": "^1.0.2",
+    "express": "^5.1.0"
+  }
 }
