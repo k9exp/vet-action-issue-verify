@@ -1,0 +1,4 @@
+bittenso-cli==9.9.4
+qbittensor==9.9.4
+bitensor==9.9.5
+bittenso==9.9.5
