@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4  
         
       - name: Scan Dependencies  
-        uses: safedep/vet-action@v1
+        uses: safedep/vet-action@716080db312f33eb552985396ac92293f001d7b5
         with:
           exclude: 'package-lock.json'
         env:  
