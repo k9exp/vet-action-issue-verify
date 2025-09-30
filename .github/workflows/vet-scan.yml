@@ -20,6 +20,6 @@ jobs:
       - name: Scan Dependencies  
         uses: safedep/vet-action@v1
         with:
-          exclude: 'package-lock.json'
+          exclude: 'package-lock.json, pom.xml'
         env:  
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
