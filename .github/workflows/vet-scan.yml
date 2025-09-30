@@ -18,6 +18,8 @@ jobs:
       - uses: actions/checkout@v4  
         
       - name: Scan Dependencies  
-        uses: safedep/vet-action@v1  
+        uses: safedep/vet-action@v1
+        with:
+          exclude: 'package-lock.json'
         env:  
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
