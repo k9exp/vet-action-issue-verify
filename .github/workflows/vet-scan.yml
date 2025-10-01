@@ -16,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest  
     steps:  
       - uses: actions/checkout@v4  
+      - name: check node version
+        run: |
+           echo $(node --version)
         
       - name: Scan Dependencies  
         uses: safedep/vet-action@1f1a3ff5f047bcdd6c31b4f053209b7d976ec519
