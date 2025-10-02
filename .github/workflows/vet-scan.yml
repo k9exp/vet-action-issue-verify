@@ -21,7 +21,7 @@ jobs:
            echo $(node --version)
         
       - name: Scan Dependencies  
-        uses: safedep/vet-action@1f1a3ff5f047bcdd6c31b4f053209b7d976ec519
+        uses: safedep/vet-action@2c28f38fdff29baf6f94835b62e2dbc4dde62184
         with:
           exclude: 'package-lock.json'
         env:  
