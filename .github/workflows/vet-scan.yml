@@ -19,6 +19,7 @@ jobs:
       - name: check node version
         run: |
            echo $(node --version)
+           echo $GITHUB_REF_NAME
         
       - name: Scan Dependencies  
         uses: safedep/vet-action@2c28f38fdff29baf6f94835b62e2dbc4dde62184
