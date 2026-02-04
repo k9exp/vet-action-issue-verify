@@ -3,5 +3,5 @@ exceptions:
   - ecosystem: PyPI
     expires: "2026-05-10T00:00:00Z"
     id: 01JKMC07KAGJYEDZX1XPAC3SKP
-    name: 'meme-llm'
+    name: 'mem-llm'
     version: 2.4.1
