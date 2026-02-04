@@ -1,6 +1,6 @@
 description: Exceptions File for vet
 exceptions:
-  - ecosystem: pypi
+  - ecosystem: kunal
     expires: "2026-05-10T00:00:00Z"
     id: 01JKMC07KAGJYEDZX1XPAC3SKP
     name: 'mem-llm'
