@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4  
         
       - name: Scan Dependencies  
-        uses: safedep/vet-action@v1
+        uses: safedep/vet-action@399423293e37eb2fadc50a867f06113ebe254808
         with:
           exception-file: .github/excep.yml
         env:  
