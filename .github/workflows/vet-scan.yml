@@ -19,7 +19,5 @@ jobs:
         
       - name: Scan Dependencies  
         uses: safedep/vet-action@399423293e37eb2fadc50a867f06113ebe254808
-        with:
-          exception-file: .github/excep.yml
         env:  
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
