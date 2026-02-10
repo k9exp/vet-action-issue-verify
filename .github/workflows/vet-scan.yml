@@ -19,5 +19,10 @@ jobs:
         
       - name: Scan Dependencies  
         uses: safedep/vet-action@399423293e37eb2fadc50a867f06113ebe254808
+        with:
+          cloud: true
+          malware: true
+          cloud-key: ${{ secrets.SAFEDEP_CLOUD_API_KEY }}
+          cloud-tenant: ${{ secrets.SAFEDEP_CLOUD_TENANT }}
         env:  
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
