@@ -24,5 +24,6 @@ jobs:
           malware: true
           cloud-key: ${{ secrets.SAFEDEP_CLOUD_API_KEY }}
           cloud-tenant: ${{ secrets.SAFEDEP_CLOUD_TENANT }}
+          policy-v2: '.github/v2.yml'
         env:  
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
