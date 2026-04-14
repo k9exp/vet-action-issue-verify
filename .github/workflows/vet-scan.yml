@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4  
         
       - name: Scan Dependencies  
-        uses: safedep/vet-action@98d70b08463d0828273f6b6c647d52c040586137
+        uses: safedep/vet-action@3218bcbc7a1fdc96839a03e598282b44a5fa5f3d
         with:
           cloud: true
           malware: true
