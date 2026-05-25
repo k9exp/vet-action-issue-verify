@@ -24,4 +24,4 @@ jobs:
         run: npm install -g @safedep/vet@1.12.18
 
       - name: Run Vet Scan
-        run: vet scan -D $(pwd) --filter-suite policy-file.yml --malware-query
+        run: vet scan -D $(pwd) --filter-suite policy-file.yml --filter-fail --malware-query
