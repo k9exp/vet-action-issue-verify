@@ -1,0 +1,27 @@
+name: Security Scan with SafeDep Vet
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+  workflow_dispatch: # Allows you to trigger the scan manually
+
+jobs:
+  vet-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-with: '20' # Installs a stable Node.js version
+
+      - name: Install SafeDep Vet
+        run: npm install -g @safedep/vet
+
+      - name: Run Vet Scan
+        run: vet scan -D $(pwd) --filter-suite policy-file.yml --filter-fail --malware-query
